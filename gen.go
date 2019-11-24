@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/wrnrlr/expreduce/expreduce"
+	"github.com/corywalker/expreduce/expreduce"
 	"os"
 	"path"
 	"strings"
@@ -147,7 +147,7 @@ func writeSymbol(fn string, defSet expreduce.NamedDefSet, def expreduce.Definiti
 }
 
 func main() {
-	var docs_location = flag.String("docs_location", "./doc_source", "Location of the docs directory.")
+	var docs_location = flag.String("docs_location", "./content/api", "Location of the docs directory.")
 	flag.Parse()
 
 	fmt.Printf("Generating documentation.\n")
