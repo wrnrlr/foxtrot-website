@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://foxtrot.sh/"
 languageCode = "en-us"
 title = "Foxtrot"
 theme = "foxtrot-theme"
