@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container" style="margin-left: 20px!important;">
+  <h1 class="text-center">
+    {{ .Type | humanize }}
+  </h1>
+  {{ range .Pages }}
+    <a class="ui large blue header" href="{{ .URL | relURL }}">
+      <div class="col">
+        {{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
+      </div>
+    </a>
+  {{ end }}
+</div>
+{{ end }}
