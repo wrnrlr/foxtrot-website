@@ -1,82 +1,93 @@
 {{ define "main" }}
-
     <style>
         .attached.segment {
-            margin: 30px 0!important;
+            margin: 30px 0 !important;
         }
+        p {
+            max-width: 800px;
+        }
+        .top.segment {
+            max-width: 800px;
+        }
+        .grid { max-width: 800px; }
     </style>
 
-<div class="ui container basic segments">
+        <div class="ui basic top segment">
 
-  <div class="ui top attached basic segment">
-      <div class="ui netboard test centered ad" data-text="Foxtrot"></div>
-  </div>
+            <div class="" style="display: flex">
+                <div class="column">
+                    <h1>Install Foxtrot</h1>
+                    <p>To install Foxtrot, the [Go programming language](https://golang.org/doc/install) and [Git](https://git-lfs.github.com/) with the [Large File Storage](https://git-lfs.github.com/) extension are required.</p>
 
-  <div class="ui attached center aligned basic segment">
-      <div class="ui green huge button">Get Started</div>
-      <div class="ui blue huge button">Documentation</div>
-  </div>
+                    <pre>bash
+                    # Clone Foxtrot repository and its submodules.
+                    git clone --recurse-submodules https://github.com/wrnrlr/foxtrot
 
-  <div class="ui doubling three column grid attached basic segment">
-      <div class="column">
-        <h2 class="ui header">
-            <i class="edit icon"></i>
-            <div class="content">
-              Scientific Notebook
-              <div class="sub header">Manage your preferences</div>
+                    # Generate builtin rules that come with the expreduce submodule.
+                    cd foxtrot/expreduce
+                    go generate ./...
+
+                    # Start Foxtrot
+                    cd ..
+                    go run cmd/main.go
+                    ```
+                    </pre>
+                    <h1>Run Foxtrot</h1>
+                    <p>
+                        It can be used in a number of ways.
+                        to keep a data-science journal,
+                        build dashboards to show metrics
+                        Write reports, create dashboard,
+                        Use a rich library of
+                    </p>
+                    <h1>Open Foxtrot</h1>
+                    <p>
+                        Write and deploy code that works across multiple-platforms, Foxtrot run on OSX, Windows, Linux, iOS and Android and the web.
+                    </p>
+                    <ul class="ui list">
+                        <li><a href="/guide/install">Installation Manual</a></li>
+                        <li><a href="/guide/language">Language Guide</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <img src="/screens/notebook2.png" style="height: 250px"/>
+                </div>
             </div>
-          </h2>
-      </div>
-      <div class="column">
-        <h2 class="ui header">
-            <i class="chart line icon"></i>
-            <div class="content">
-              Visualize Data
-              <div class="sub header">Manage your preferences</div>
-            </div>
-          </h2>
-      </div>
-      <div class="column">
-        <h2 class="ui header">
-            <i class="superscript icon"></i>
-            <div class="content">
-              Beautiful Typography
-              <div class="sub header">Manage your preferences</div>
-            </div>
-          </h2>
-      </div>
-      <div class="column">
-        <h2 class="ui header">
-            <i class="code icon"></i>
-            <div class="content">
-              Symbolic Language
-              <div class="sub header">Manage your preferences</div>
-            </div>
-          </h2>
-      </div>
-      <div class="column">
-          <h2 class="ui header">
-              <i class="computer icon"></i><i class="tablet alternate icon"></i>
-              <div class="content">
-                Cross Platform
-                <div class="sub header">Manage your preferences</div>
-              </div>
-            </h2>
-        </div>
-      <div class="column">
-          <h2 class="ui header">
-              <i class="balance scale icon"></i>
-              <div class="content">
-                Open Source
-                <div class="sub header">Manage your preferences</div>
-              </div>
-            </h2>
+
+            <h4>A Symbolic Programming Language</h4>
+            <p>
+                Foxtrot has a build-in programming language with a rich library for functions, symbols and other expressions.
+                For more documentation about the Foxtrot langiage read our Get Started Guide and api reference.
+            </p>
+            <p>
+                Foxtrot is written in the Go language and leverages Go's ecosystem.
+                It is not required to install Go to run Foxtrot, but it can help to manage dependencies, and build Go or C Libraries.
+            </p>
+
+            <h2>100% Open-Source</h2>
+            <p>
+                The source code of the Foxtrot is hosted over on <a href="https://github.com/wrnrlr/foxtrot">Github</a>.
+            </p>
+            <p>
+                The software is available under the MIT open-source software license,
+                for more information read the license <a href="">here</a>.
+            </p>
+            <h4 class="ui header">Contribute</h4>
+            <ul>
+                <li>Ask Questions</li>
+                <li>Report An issue</li>
+                <li>Submit a pull Request</li>
+            </ul>
+            <h4 class="ui header">Donate</h4>
+            <p>
+                To support the developers of Foxtrot, please consider donating money using one of the following platforms.
+                Your support is greatly
+            </p>
+            <ul>
+                <li><a href="/guide/user">Github Donate</a></li>
+                <li><a href="/guide/language">Patreon Page</a></li>
+                <li><a href="/guide/language">Bitcoin Address:</a></li>
+            </ul>
         </div>
     </div>
-
-    <div class="ui bottom attached basic segment">
-        <h1 class="ui huge header">Support</h1>
-        <p>weldneowndeow</p>
-    </div>
-</div>
 {{ end }}
