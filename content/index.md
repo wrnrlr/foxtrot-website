@@ -2,16 +2,26 @@
 ---
 
 
-### Get Started
-Foxtrot is a scientific notebook application with a builtin functional language and a large standard library with APIs for solving equations, network programming, computer graphics and many more. 
-The application is written in Go and runs on MacOSX, Linux and Windows, with experimental support for iOS, Android and WebASM.
-  
+### Get Started 
+Foxtrot is an open-source notebook application.
+It has a builtin functional language and
+a large standard library of APIs for
+solving equations, network programming, computer graphics and many more
+The application is written in Go and
+runs on MacOSX, Linux and Windows,
+with experimental support for iOS, Android and the Web.
+Use text with beautiful mathematical typography to
+develop your own software,
+analyse big volumes of data,
+publish papers on a topic,
+create dashboard to track metrics. 
 
-* [Installation Manual](/guide/install)
-* [User Guide](/guide/user)
-* [Language Tutorial](/guide/user)
+
+* Follow the [Installation Manual](/guide/install) to setup Foxtrot on your system
+* Read [User Guide](/guide/user) to learn the basic usage of Foxtrot
 
 ### Documentation
+
 * [Language Tutorial](/guide/user)
 * [Computer Graphics](/guide/user)
 * [Network Programming](/guide/user)
